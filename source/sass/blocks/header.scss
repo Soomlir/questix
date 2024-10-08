@@ -1,0 +1,36 @@
+.header {
+  min-width: 360px;
+}
+
+.nav__menu {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("/img/menu-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__item--no-mobile {
+  display: none;
+}
+
+.nav__link {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+
+  &--3 {
+    background-image: url("/img/person.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.nav__text--no-mobile {
+  display: none;
+}

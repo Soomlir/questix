@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Квестикс</title>
+		<link rel="stylesheet" href="css/style.min.css">
+	</head>
+
+	<body class="page">
+		<header class="page__header">
+			<nav class="page__nav nav">
+				<a class="nav__menu" href="#!">
+					<span class="visually-hidden">Открыть меню.</span>
+				</a>
+				<a href="#!">
+					<img class="nav__logo" src="img/logo.svg" width="104" height="18" alt="лого Квестикс.">
+				</a>
+				<ul class="nav__list">
+					<li class="nav__item nav__item--no-mobile">
+						<a class="nav__link nav__link--1" href="#!">Контакты</a>
+					</li>
+					<li class="nav__item nav__item--no-mobile">
+						<a class="nav__link nav__link--2" href="#!">Блог</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link nav__link--3" href="#!">
+							<span class="nav__text nav__text--no-mobile">Заказы</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main">
+			{# Сюда подставляется содержимое одноименного блока из файла страницы, в котором прописано подключение layout #}
+			{% block main %}
+				{# Если на странице нет такого блока, используется это содержимое по умолчанию #}
+				Страница в разработке
+			{% endblock %}
+		</main>
+
+		{% block modal %}{% endblock %}
+
+		{% include 'base/scripts.twig' %}
+	</body>
+</html>

@@ -1,6 +1,10 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import "base/fonts";
 @import "base/mq";
 @import "base/global";
 @import "blocks/visually-hidden";
 @import "blocks/header";
+@import "blocks/breadcrumbs";
+@import "blocks/main";
 @import "blocks/promo";
+@import "blocks/reviews";

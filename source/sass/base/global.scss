@@ -10,6 +10,9 @@ html {
 body {
   min-width: 360px;
   margin: 0;
+  overflow-x: hidden;
+  font-family: "Open Sans", "Arial", sans-serif;
+  background-color: #f5f5f5;
 }
 
 img {
@@ -25,4 +28,20 @@ a {
 picture,
 source {
   display: contents;
+}
+
+.button {
+  display: block;
+  box-sizing: border-box;
+  width: 334px;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #f77833;
+  border: none;
+  border-radius: 7px;
 }

@@ -1,14 +1,87 @@
 .promo {
-  height: 300px;
-  background-image: url("/img/promo-game.png");
+  background-color: #ffffff;
+  background-image: url("/img/promo-game.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-width: 1440px) {
+    box-sizing: border-box;
+    width: 826px;
+    padding: 11px 14px 32px 24px;
+    background-position: 100% 0;
+  }
+}
+
+.promo__label-wrap {
+  width: 125px;
+  padding: 6px;
+  padding-top: 7px;
+  color: #383838;
 }
 
 .promo__label {
   width: 118px;
   height: 15px;
+  margin: 0;
   font-size: 10px;
   line-height: 110%;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 3px;
+}
+
+.info {
+  padding: 12px 12px 12px;
+  background-color: #ffffff;
+}
+
+.promo__title {
+  margin-top: 284px;
+  margin-bottom: 18px;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 120%;
+  text-align: center;
+  color: #424242;
+
+  @media (min-width: 1440px) {
+    margin: 0;
+    font-size: 36px;
+    text-align: left;
+  }
+}
+
+.promo__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 270px;
+  margin: 0;
+  margin-right: auto;
+  margin-bottom: 19px;
+  margin-left: auto;
+  padding: 0;
+  list-style: none;
+  gap: 7px;
+}
+
+.promo__link {
+  display: block;
+  padding: 6px 13px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  color: #383838;
+  text-decoration: none;
+  background-color: rgba(#1c1c1c, 0.1);
+  border-radius: 4px;
+}
+
+.promo__text {
+  margin-bottom: 0;
+  padding: 0 19px;
+  padding-bottom: 28px;
+  font-size: 16px;
+  line-height: 130%;
+  text-align: center;
+  color: #424242;
 }

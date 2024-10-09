@@ -1,0 +1,138 @@
+.reviews {
+  padding-top: 24px;
+}
+
+.reviews__title {
+  margin: 0 29px;
+  margin-bottom: 3px;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 120%;
+  color: #424242;
+}
+
+.reviews__counter {
+  margin: 0 30px;
+  font-size: 13px;
+  line-height: 130%;
+  color: #424242;
+}
+
+.reviews__list {
+  display: flex;
+  gap: 10px;
+
+  margin: 0;
+  margin-left: 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.reviews__item {
+  flex-shrink: 0;
+  box-sizing: border-box;
+  width: 300px;
+  padding: 34px 20px;
+  padding-bottom: 50px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px 0 rgb(#000000, 0.08);
+}
+
+.reviews__date {
+  margin-bottom: 19px;
+  font-size: 13px;
+  line-height: 130%;
+  color: #868686;
+}
+
+.reviews__gamers {
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 130%;
+  color: #383838;
+}
+
+.reviews__raiting {
+  width: 120px;
+  height: 12px;
+  margin-bottom: 19px;
+  background-image: url("/img/star.svg");
+
+  &--1 {
+    width: 20px;
+  }
+
+  &--2 {
+    width: 40px;
+  }
+
+  &--3 {
+    width: 60px;
+  }
+
+  &--4 {
+    width: 80px;
+  }
+
+  &--5 {
+    width: 100px;
+  }
+}
+
+.reviews__event {
+  margin-bottom: 21px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  color: #383838;
+}
+
+.reviews__text {
+  padding-right: 20px;
+  font-size: 16px;
+  line-height: 130%;
+  color: #5e5e5e;
+}
+
+.reviews__slider-controls {
+  display: flex;
+  width: 92px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+  gap: 6px;
+}
+
+.reviews__slide {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: rgba(#1c1c1c, 0.2);
+  border-radius: 50%;
+  appearance: none;
+
+  &--active {
+    width: 16px;
+    background-color: #d9d9d9;
+    border-radius: 10px;
+  }
+}
+
+.reviews__btn-all {
+  margin-bottom: 24px;
+  padding: 16px 32px;
+}
+
+.reviews__btn-wrap {
+  padding: 10px 12px;
+  background-color: #ffffff;
+  border-radius: 7px;
+  box-shadow: 0 -2px 3px 0 rgba(#000000, 0.15);
+}
+
+.reviews__btn-buy {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px;
+}

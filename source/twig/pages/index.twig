@@ -1,32 +1,43 @@
 {% extends '../layout.twig' %}
 
 {% block main %}
-	<section class="main__promo promo">
-		<h1 class="visually-hidden">Игра Стрелы Амура.</h1>
-		<div class="promo__label">самый популярный</div>
-	</section>
-	<section class="main__info info">
-		<h2>Стрелы Амура, 18+</h2>
-		<ul class="info__list">
-			<li>
-				<a href="#!">квест</a>
+	<section class="main__breadcrumbs breadcrumbs">
+		<h2 class="visually-hidden">Хлебные крошки.</h2>
+		<ul class="breadcrumbs__list">
+			<li class="breadcrumbs__item">
+				<a class="breadcrumbs__link" href="#!">Главная</a>
 			</li>
-			<li>
-				<a href="#!">для 2 человек</a>
-			</li>
-			<li>
-				<a href="#!">для дома</a>
-			</li>
-			<li>
-				<a href="#!">сложность 7/10</a>
+			<li class="breadcrumbs__item">
+				<a class="breadcrumbs__link" href="#!">Каталог</a>
 			</li>
 		</ul>
-		<p class="info__text">
+	</section>
+	<section class="main__promo promo">
+		<div class="promo__label-wrap">
+			<p class="promo__label">самый популярный</p>
+		</div>
+				<h1 class="promo__title">Стрелы Амура, 18+</h1>
+		<ul class="promo__list">
+			<li class="promo__item">
+				<a class="promo__link" href="#!">квест</a>
+			</li>
+			<li class="promo__item">
+				<a class="promo__link" href="#!">для 2 человек</a>
+			</li>
+			<li class="promo__item">
+				<a class="promo__link" href="#!">для дома</a>
+			</li>
+			<li class="promo__item">
+				<a class="promo__link" href="#!">сложность 7/10</a>
+			</li>
+		</ul>
+		<p class="promo__text">
 			Романтический квест по поиску подарка для второй половинки:
-			мужа, жены, парня или девушки. Чтобы собрать 7 стрел бога любви Амура и разыскать подарок,
-			игроку нужно выполнить задания древних богов
+									мужа, жены, парня или девушки. Чтобы собрать 7 стрел бога любви Амура и разыскать подарок,
+									игроку нужно выполнить задания древних богов
 		</p>
 	</section>
+
 	<section class="main__reviews reviews">
 		<h2 class="reviews__title">Отзывы клиентов</h2>
 		<span class="reviews__counter">1/182</span>
@@ -35,13 +46,13 @@
 				<p class="reviews__date">
 					14 февраля 2024
 				</p>
-				<p class="reviews__gamers">Константин (12 игроков 36-50 лет)</p>
-				<p class="reviews__raiting"></p>
+				<p class="reviews__gamers">Светлана (2 игрока 36 лет)</p>
+				<p class="reviews__raiting reviews__raiting--5"></p>
 				<h3 class="reviews__event">День святого Валентина</h3>
 				<p class="reviews__text">
 					Понравилось, что вопросы хоть и объединены одной темой, были не похожи друг на друга.
-					Разные страны и эпохи — есть где разгуляться фантазии. И если сначала мы пытались
-					искать правильные ответы, то по ходу игры стало интереснее и смешнее запутать других игроков.
+																									Разные страны и эпохи — есть где разгуляться фантазии. И если сначала мы пытались
+																									искать правильные ответы, то по ходу игры стало интереснее и смешнее запутать других игроков.
 				</p>
 			</li>
 			<li class="reviews__item">
@@ -49,12 +60,12 @@
 					14 февраля 2024
 				</p>
 				<p class="reviews__gamers">Светлана (2 игрока 36 лет)</p>
-				<p class="reviews__raiting"></p>
+				<p class="reviews__raiting  reviews__raiting--5"></p>
 				<h3 class="reviews__event">День Рождения</h3>
 				<p class="reviews__text">
 					Понравилось, что вопросы хоть и объединены одной темой, были не похожи друг на друга.
-					Разные страны и эпохи — есть где разгуляться фантазии. И если сначала мы пытались
-					искать правильные ответы, то по ходу игры стало интереснее и смешнее запутать других игроков.
+																									Разные страны и эпохи — есть где разгуляться фантазии. И если сначала мы пытались
+																									искать правильные ответы, то по ходу игры стало интереснее и смешнее запутать других игроков.
 				</p>
 			</li>
 			<li class="reviews__item">
@@ -62,15 +73,28 @@
 					14 февраля 2024
 				</p>
 				<p class="reviews__gamers">Светлана (2 игрока 36 лет)</p>
-				<p class="reviews__raiting"></p>
+				<p class="reviews__raiting  reviews__raiting--5"></p>
 				<h3 class="reviews__event">День Рождения</h3>
 				<p class="reviews__text">
 					Понравилось, что вопросы хоть и объединены одной темой, были не похожи друг на друга.
-					Разные страны и эпохи — есть где разгуляться фантазии. И если сначала мы пытались искать
-					правильные ответы, то по ходу игры стало интереснее и смешнее запутать других игроков.
+																									Разные страны и эпохи — есть где разгуляться фантазии. И если сначала мы пытались искать
+																									правильные ответы, то по ходу игры стало интереснее и смешнее запутать других игроков.
 				</p>
 			</li>
 		</ul>
+		<div class="reviews__slider-controls">
+			<input class="reviews__slide" type="radio" name="slide">
+			<input class="reviews__slide reviews__slide--active" type="radio" name="slide">
+			<input class="reviews__slide" type="radio" name="slide">
+			<input class="reviews__slide" type="radio" name="slide">
+			<input class="reviews__slide" type="radio" name="slide">
+		</div>
+		<button class="reviews__btn-all button">Смотреть все отзывы</button>
+		<div class="reviews__btn-wrap">
+			<button class="reviews__btn-buy button">
+				<span>Купить квест</span>
+						<span>500 ₽</span>
+					</button>
+		</div>
 	</section>
-
 {% endblock %}

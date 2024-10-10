@@ -1,5 +1,10 @@
 .reviews {
   padding-top: 24px;
+
+  @media (min-width: 1440px) {
+    grid-column: span 2;
+    padding-top: 30px;
+  }
 }
 
 .reviews__title {
@@ -9,6 +14,20 @@
   font-size: 24px;
   line-height: 120%;
   color: #424242;
+
+  & .desktop {
+    display: none;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 28px;
+
+    & .desktop {
+      display: block;
+    }
+  }
 }
 
 .reviews__counter {
@@ -16,16 +35,26 @@
   font-size: 13px;
   line-height: 130%;
   color: #424242;
+
+  @media (min-width: 1440px) {
+    display: none;
+  }
 }
 
 .reviews__list {
   display: flex;
   gap: 10px;
-
   margin: 0;
   margin-left: 12px;
   padding: 0;
   list-style: none;
+
+  @media (min-width: 1440px) {
+    width: 773px;
+    margin-left: 0;
+    gap: 24px;
+    overflow-x: hidden;
+  }
 }
 
 .reviews__item {
@@ -36,6 +65,13 @@
   padding-bottom: 50px;
   background-color: #ffffff;
   box-shadow: 0 1px 4px 0 rgb(#000000, 0.08);
+
+  @media (min-width: 1440px) {
+    width: 259px;
+    margin-bottom: 16px;
+    padding: 30px 22px 30px;
+    border-radius: 8px;
+  }
 }
 
 .reviews__date {
@@ -43,6 +79,10 @@
   font-size: 13px;
   line-height: 130%;
   color: #868686;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 16px;
+  }
 }
 
 .reviews__gamers {
@@ -78,6 +118,10 @@
   &--5 {
     width: 100px;
   }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 35px;
+  }
 }
 
 .reviews__event {
@@ -86,6 +130,11 @@
   font-size: 18px;
   line-height: 130%;
   color: #383838;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
 }
 
 .reviews__text {
@@ -93,6 +142,22 @@
   font-size: 16px;
   line-height: 130%;
   color: #5e5e5e;
+
+  @media (min-width: 1440px) {
+    padding-right: 0;
+    font-size: 14px;
+  }
+}
+
+.reviews__scroll {
+  display: none;
+
+  @media (min-width: 1440px) {
+    display: block;
+    width: 773px;
+    height: 15px;
+    background-color: red;
+  }
 }
 
 .reviews__slider-controls {
@@ -102,6 +167,10 @@
   margin-left: auto;
   padding: 10px;
   gap: 6px;
+
+  @media (min-width: 1440px) {
+    display: none;
+  }
 }
 
 .reviews__slide {
@@ -122,17 +191,10 @@
 .reviews__btn-all {
   margin-bottom: 24px;
   padding: 16px 32px;
-}
 
-.reviews__btn-wrap {
-  padding: 10px 12px;
-  background-color: #ffffff;
-  border-radius: 7px;
-  box-shadow: 0 -2px 3px 0 rgba(#000000, 0.15);
-}
-
-.reviews__btn-buy {
-  display: flex;
-  justify-content: space-between;
-  padding: 16px 24px;
+  @media (min-width: 1440px) {
+    width: 437px;
+    margin-top: 24px;
+    margin-left: 170px;
+  }
 }
